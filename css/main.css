@@ -489,16 +489,21 @@ input[type="submit"]:hover {
 
 /* Start Animation */
 @keyframes pulsy {
-  0% {box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);}
-  70% {box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);}
-  100% {box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);}
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  }
+  70% {
+    box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+  }
 }
 /* End Animation */
 
-
 /* Media queries */
 
-@media screen and (max-width: 768px ) {
+@media screen and (max-width: 768px) {
   body {
     background: url("../img/sitebg2.jpg") no-repeat center fixed;
     background-size: cover;
@@ -507,7 +512,7 @@ input[type="submit"]:hover {
   .landing-text h1 {
     font-size: 15rem;
   }
-  
+
   .landing-text h6 {
     font-size: 1.7rem;
   }
@@ -543,7 +548,7 @@ input[type="submit"]:hover {
     height: 7rem;
   }
 
-  .icon-container i{
+  .icon-container i {
     font-size: 4rem;
   }
 
@@ -558,5 +563,59 @@ input[type="submit"]:hover {
   .timeline .date::after {
     left: -5.9rem;
   }
+}
 
+@media screen and (max-width: 600px) {
+  .menu-toggler {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .landing-text h1 {
+    font-size: 8rem;
+  }
+  .landing-text h {
+    font-size: 1.4rem;
+  }
+  .nav-link {
+    font-size: 3.5rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    margin: 0 0 7rem 0;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-img {
+    margin: 0 0 2rem 0;
+    order: 1;
+  }
+
+  .portfolio-description {
+    margin: 0;
+    order: 2;
+  }
+
+  .timeline p {
+    font-size: 1.6rem;
+  }
+
+  .timeline .date::before {
+    font-size: 1.4rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .up {
+    right: 2rem;
+  }
 }
